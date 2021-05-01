@@ -3,7 +3,7 @@ from PIL import ImageTk, Image
 
 
 #########################################
-##### Class Definitions & Functions #####
+##### Class Definitions & Methods #######
 #########################################
 
 class Property():
@@ -174,7 +174,6 @@ class Property():
                 roi = profit / investment
                 roi = round(roi, 2)
                 return roi
-
 
 
 
