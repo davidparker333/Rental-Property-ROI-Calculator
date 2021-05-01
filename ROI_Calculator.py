@@ -46,6 +46,8 @@ class Property():
 
 
     def step2(self):
+        #complete step 1 to prevent a user prematurely calling step2
+        self.step1()
         #pack values from entry fields
         this_property.ROI.dwnpay = dwnpay_var.get()
         this_property.ROI.closingcost = closingcost_var.get()
@@ -411,7 +413,7 @@ label_cashflow_result = tk.Label(
 )
 
 btn_calculate_cashflow = tk.Button(
-    text="Step 1: Calculate Cash Flow",
+    text="Calculate Cash Flow",
     command=this_property.step1
 )
 
@@ -470,7 +472,7 @@ label_roi = tk.Label(
 )
 
 btn_calculate_roi = tk.Button(
-    text="Step 2: Calculate ROI",
+    text="Calculate ROI",
     command=this_property.step2
 )
 
