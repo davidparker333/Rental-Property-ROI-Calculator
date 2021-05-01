@@ -494,7 +494,6 @@ btn_calculate_roi.grid(row=18, column=0, columnspan=2, sticky="NEWS", padx=10, p
 btn_reset.grid(row=19, column=0, columnspan=2, sticky="NEWS", padx=10, pady=10)
 
 
-
 #########################################
 ############## Main Loop ################
 #########################################
